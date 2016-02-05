@@ -1,0 +1,106 @@
+\documentclass{report}
+
+\usepackage{prince2}
+\usepackage{hyperref}
+\usepackage{color}
+
+\usepackage[T1]{fontenc}
+\usepackage{titlesec, blindtext, color}
+\definecolor{gray75}{gray}{0.75}
+\newcommand{\hsp}{\hspace{20pt}}
+\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Huge\bfseries}
+
+\begin{document}
+\projectproduct
+\project{Project Name}
+\date{\today}
+\author{P.Ryzhov}
+\client{Client name}
+\maketitle
+
+\chapter{Project Product Description History}
+
+\section{Document Location}
+This document is only valid on the day it was printed.
+The source of the document will be found on the project's PC in location.
+
+\section{Revision History}
+
+Date of this revision: 2016-01-29
+
+\begin{center}
+    \begin{tabular}{| p{2cm} | p{2cm} | l | p{2cm} |}
+    \hline
+    Revision data & Previous revision date & Summary of changes & Changes marked \\
+    \hline
+    2016-01-29 & & First issue & \\
+    \hline
+    \end{tabular}
+\end{center}
+
+\section{Approvals}
+This document requires the following approvals.
+Signed approval forms are filed in the Management/Specialist/Quality section of the project files.
+
+\begin{center}
+    \begin{tabular}{| p{2cm} | p{2cm} | l | p{2cm} | p{2cm} |}
+    \hline
+    Name & Signature & Title & Date of Issue & Version \\
+    \hline
+     & & & & \\
+    \hline
+    \end{tabular}
+\end{center}
+
+\section{Distribution}
+This document has been distributed to:
+
+\begin{center}
+    \begin{tabular}{| p{2cm} | l | p{2cm} | p{2cm} |}
+    \hline
+    Name & Title & Date of Issue & Version \\
+    \hline
+     & & & \\
+    \hline
+    \end{tabular}
+\end{center}
+
+\tableofcontents
+
+\chapter{Title}
+Name by which the project is known.
+
+\section{Purpose}
+The purpose that the project product will fulfil and who will use it. It is helpful in understanding the product's functions, size, quality, complexity, robustness etc.
+
+\section{Composition}
+A description of the major products to be delivered by the project.
+
+\section{Derivation}
+What are the source products from which this product is derived? Examples are:
+\begin{itemize}
+\item Existing products to be modified
+\item Design specifications
+\item A feasibility report
+\item Project mandate
+\end{itemize}
+
+\section{Development Skills Required}
+An indication of the skills required to develop the product, or a pointer to which area(s) should supply the development resources.
+
+\section{Customer's Quality Expectations}
+A description of the quality expected of the project product and the standards and processes that will need to be applied to achieve that quality. The quality expectations are captured in discussions with the customer. Where possible, expectations should be prioritised.
+
+\section{Acceptance Criteria}
+A prioritised list of criteria that the project product must meet before the customer will accept it --- i.e. measurable definitions of the attributes that must apply to the set of products to be acceptable to key stakeholders (and, in particular, the users and the operational and maintenance organisations).
+
+\section{Project Level Quality Tolerances}
+Any tolerances that may apply for the acceptance criteria.
+
+\section{Acceptance Method}
+The means by which acceptance will be confirmed. This may simply be a case of confirming that all the project's products have been approved or may involve describing complex handover arrangements for the project product, including any phased handover of the project's products.
+
+\section{Acceptance Responsibilities}
+Defining who will be responsible for confirming acceptance.
+
+\end{document}
