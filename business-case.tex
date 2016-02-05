@@ -1,0 +1,95 @@
+\documentclass{report}
+
+\usepackage{prince2}
+\usepackage{hyperref}
+\usepackage{color}
+
+\usepackage[T1]{fontenc}
+\usepackage{titlesec, blindtext, color}
+\definecolor{gray75}{gray}{0.75}
+\newcommand{\hsp}{\hspace{20pt}}
+\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Huge\bfseries}
+
+\begin{document}
+\businesscase
+\project{Project Name}
+\date{\today}
+\author{P.Ryzhov}
+\maketitle
+
+\chapter{Business Case History}
+
+\section{Document Location}
+This document is only valid on the day it was printed.
+The source of the document will be found on the project's PC in location.
+
+\section{Revision History}
+
+Date of this revision: 2016-01-29
+
+\begin{center}
+    \begin{tabular}{| p{2cm} | p{2cm} | l | p{2cm} |}
+    \hline
+    Revision data & Previous revision date & Summary of changes & Changes marked \\
+    \hline
+    2016-01-29 & & First issue & \\
+    \hline
+    \end{tabular}
+\end{center}
+
+\section{Approvals}
+This document requires the following approvals.
+Signed approval forms are filed in the Management/Specialist/Quality section of the project files.
+
+\begin{center}
+    \begin{tabular}{| p{2cm} | p{2cm} | l | p{2cm} | p{2cm} |}
+    \hline
+    Name & Signature & Title & Date of Issue & Version \\
+    \hline
+     & & & & \\
+    \hline
+    \end{tabular}
+\end{center}
+
+\section{Distribution}
+This document has been distributed to:
+
+\begin{center}
+    \begin{tabular}{| p{2cm} | l | p{2cm} | p{2cm} |}
+    \hline
+    Name & Title & Date of Issue & Version \\
+    \hline
+     & & & \\
+    \hline
+    \end{tabular}
+\end{center}
+
+\tableofcontents
+
+\chapter{Business Case}
+
+\section{Purpose}
+To document the justification for the undertaking of a project based on the estimated cost of development and the anticipated business benefits to be gained.  The Business Case is used to say why the forecast effort and time will be worth the expenditure.  The on-going viability of the project will be monitored by the Project Board against the Business Case.
+
+\section{Reasons}
+An explanation of the reasons why the project outcome is needed
+
+\section{Options}
+Brief description of the different options considered for the project
+
+\section{Benefits Expected}
+Expressed in measurable terms against today's situation
+
+\section{Risks}
+Summary of the key risks of the project
+
+\section{Cost}
+Extracted from the Project Plan
+
+\section{Timescales}
+Summary of the Project Plan
+
+\section{Investment Appraisal}
+Illustrates the balance between the development, operational, maintenance and support costs against the financial value of the benefits over a period of time
+
+\end{document}

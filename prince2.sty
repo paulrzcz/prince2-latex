@@ -1,0 +1,32 @@
+% Copyright note: This package defines Prince2 title pages
+% Author: P.Ryzhov
+% Please check for updates
+\ProvidesPackage{prince2}[2016/01/26]
+\RequirePackage{graphicx}
+
+\renewcommand{\rmdefault}{phv} % Switch to Helvetica !
+
+\newcommand*{\doctype}[1]{\gdef\@doctype{#1}}
+
+\newcommand*{\businesscase}{\doctype{Business Case}}
+
+\newcommand*{\project}[1]{\gdef\@project{#1}}
+
+\renewcommand*{\maketitle}{%
+\hypersetup{pageanchor=false}
+\begin{titlepage}
+    \raggedright
+    {\scshape\LARGE Project Documentation \par}
+    \vspace{2cm}
+    {\scshape\Huge \@doctype \par}
+    \vspace{3cm}
+    {\scshape\Large Project: \@project \par}
+    \vspace{5cm}
+    {\scshape\large Date: \@date \par}
+    {\scshape\large Author: \@author \par}
+    {\scshape\large Version: 1.0\par}
+    \vfill
+\end{titlepage}
+\hypersetup{pageanchor=true}
+}
+\endinput
