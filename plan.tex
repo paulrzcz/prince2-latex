@@ -1,0 +1,111 @@
+\documentclass{report}
+
+\usepackage{prince2}
+\usepackage{hyperref}
+\usepackage{color}
+
+\usepackage[T1]{fontenc}
+\usepackage{titlesec, blindtext, color}
+\definecolor{gray75}{gray}{0.75}
+\newcommand{\hsp}{\hspace{20pt}}
+\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Huge\bfseries}
+
+\begin{document}
+\princeplan
+\project{Project Name}
+\date{\today}
+\author{P.Ryzhov}
+\client{Client name}
+\maketitle
+
+\chapter{Plan History}
+
+\section{Document Location}
+This document is only valid on the day it was printed.
+The source of the document will be found on the project's PC in location.
+
+\section{Revision History}
+
+Date of this revision: 2016-01-29
+
+\begin{center}
+    \begin{tabular}{| p{2cm} | p{2cm} | l | p{2cm} |}
+    \hline
+    Revision data & Previous revision date & Summary of changes & Changes marked \\
+    \hline
+    2016-01-29 & & First issue & \\
+    \hline
+    \end{tabular}
+\end{center}
+
+\section{Approvals}
+This document requires the following approvals.
+Signed approval forms are filed in the Management/Specialist/Quality section of the project files.
+
+\begin{center}
+    \begin{tabular}{| p{2cm} | p{2cm} | l | p{2cm} | p{2cm} |}
+    \hline
+    Name & Signature & Title & Date of Issue & Version \\
+    \hline
+     & & & & \\
+    \hline
+    \end{tabular}
+\end{center}
+
+\section{Distribution}
+This document has been distributed to:
+
+\begin{center}
+    \begin{tabular}{| p{2cm} | l | p{2cm} | p{2cm} |}
+    \hline
+    Name & Title & Date of Issue & Version \\
+    \hline
+     & & & \\
+    \hline
+    \end{tabular}
+\end{center}
+
+\tableofcontents
+
+\chapter{Plan}
+
+\section{Plan Description}
+A brief description of what the plan encompasses (i.e. project, stage, team, exception) and the planning approach.
+
+\section{Plan Prerequisites}
+Any fundamental aspects which must be in place, and remain in place, for the plan to succeed.
+
+\section{External Dependencies}
+Any external dependencies which may influence the plan.
+
+\section{Planning Assumptions}
+Any assumptions upon which the plan is based.
+
+\section{Lessons Incorporated}
+Details of relevant lessons from previous similar projects which have been reviewed and accommodated within this plan.
+
+\section{Monitoring and Control}
+Details of how the plan will be monitored and controlled.
+
+\section{Budgets}
+Covering time and cost, including provisions for risks and changes.
+
+\section{Tolerances}
+Time, cost and scope tolerances for the level of plan (it may also include more specific stage or team level risk tolerances).
+
+\section{Product Descriptions}
+Covering the products within scope of the plan (for the Project Plan this will be the project product; for the Stage Plan this will be the stage products; and for a Team Plan this will be a reference to the Work Package assigned).  Quality tolerances are defined in each Product Description.
+
+\section{Schedule}
+
+Which may include graphical representations of:
+\begin{itemize}
+\item Gantt or bar chart 
+\item Product breakdown structure (see Appendix D for an example)
+\item Product flow diagram (see Appendix D for an example)
+\item Activity network 
+\item Table of resource requirements --- by resource type (e.g. four engineers, one test manager, one business analyst)
+\item Table of requested/assigned specific resources --- by name (e.g. Nikki, Jay).
+\end{itemize}
+
+\end{document}

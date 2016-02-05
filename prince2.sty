@@ -10,7 +10,11 @@
 
 \newcommand*{\businesscase}{\doctype{Business Case}}
 
+\newcommand*{\princeplan}{\doctype{Plan}}
+
 \newcommand*{\project}[1]{\gdef\@project{#1}}
+
+\newcommand*{\client}[1]{\gdef\@client{#1}}
 
 \renewcommand*{\maketitle}{%
 \hypersetup{pageanchor=false}
@@ -24,6 +28,7 @@
     \vspace{5cm}
     {\scshape\large Date: \@date \par}
     {\scshape\large Author: \@author \par}
+    {\scshape\large Client: \@client \par}
     {\scshape\large Version: 1.0\par}
     \vfill
 \end{titlepage}
